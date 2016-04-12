@@ -1,0 +1,3 @@
+{{extend 'layout.html'}}
+
+<h1>Oczekujace na akceptacje:</h1> <br/> {{ for new in sprzet: }}<div><h2>{{=(A(new.Rodzaj_Sprzetu,_href=URL('EdycjaSprzetx',args=new.id))) }} <small>({{=new.Termin }})</small></h2><p>{{=new.Wlasciciel}}</p><p>{{=new.Dodatkowy_Opis}}</p></div> <br/> {{pass}}

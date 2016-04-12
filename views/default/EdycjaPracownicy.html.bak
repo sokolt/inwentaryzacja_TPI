@@ -1,0 +1,4 @@
+{{extend 'layout.html'}}
+{{=xyz}}
+{{=A('Wróć',_class="btn btn-large btn-primary",
+        _href=URL('index'))}}

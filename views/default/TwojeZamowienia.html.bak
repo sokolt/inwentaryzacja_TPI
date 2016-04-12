@@ -1,0 +1,4 @@
+{{extend 'layout.html'}}
+
+
+<h1>Twoje Zamowienia</h1> <br/> {{ for abc in zam: }}<div> <h2>Zamowienie nr:&nbsp{{=abc.id}} </h2><p><b>Rodzaj sprzetu:&nbsp</b>{{= abc.Rodzaj_Sprzetu }}</p><p><b>Ilosc:&nbsp</b> {{= abc.Ilosc}}</p><p><b>Dodatkowy opis:&nbsp</b>{{= abc.Dodatkowy_opis }}</p><p><b>Status:&nbsp</b>{{=abc.Status}}</p></div><br/> {{pass}}{{pass}}

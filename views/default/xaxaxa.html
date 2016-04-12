@@ -1,0 +1,16 @@
+{{extend 'layout.html'}}
+
+
+<h2>Sprzet</h2>
+{{for new in sprzet:}}
+{{if new.Akceptacja==AKCEPTACJA[1]:}}
+<table><p>
+<td>{{=new.Rodzaj_Sprzetu}}</td>
+<td>{{=new.Model}}</td>
+<td>{{=new.Nr_Inw}}</td>
+<td>{{=new.Status}}</td></p>
+</table>
+{{pass}}{{pass}}
+
+
+<h1>Pracownicy</h1> <br/> {{ for new in tabela: }}<div> <h2>{{=(A(new.Nazwisko,_href=URL('EdycjaPracownicyx',args=new.id))) }} <small>({{= new.Imie }})</small></h2><p><b>Stanowisko:</b>{{= new.Stanowisko }}</p><p><b>Miejsce Pracy:</b> {{= new.Miejsce_Pracy }}</p><p><b>Rodzaj zatrudnienia:</b>{{= new.Rodzaj_Zatrudnienia }}</p><p><b>Numer telefonu:</b>{{= new.Nr_tel_Prywatny }}</p></div><br/> {{pass}}{{pass}}

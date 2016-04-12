@@ -1,0 +1,2 @@
+{{extend 'layout.html'}}
+<h1>Twoj sprzet</h1> <br/> {{ for new in wrt: }}{{if new.user_id==auth.user_id:}}<div> <h2>{{=new.Rodzaj_Sprzetu}}</h2><p><b>Model:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>{{= new.Model }}</p><p><b>Gwarancja:&nbsp</b> {{= new.Gwarancja}}</p></div><br/> {{pass}}{{pass}}

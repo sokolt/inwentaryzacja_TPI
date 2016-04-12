@@ -1,0 +1,3 @@
+{{extend 'layout.html'}}
+
+<h1>Pracownicy</h1> <br/> {{ for new in tabela: }}<div> <h2>{{=(A(new.Nazwisko,_href=URL('EdycjaPracownicyx',args=new.id))) }} <small>({{= new.Imie }})</small></h2><p><b>Stanowisko:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp {{= new.Stanowisko }}</p><p><b>Miejsce Pracy:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b> {{= new.Miejsce_Pracy }}</p><p><b>Rodzaj zatrudnienia:</b>&nbsp&nbsp {{= new.Rodzaj_Zatrudnienia }}</p><p><b>Numer telefonu:</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{= new.Nr_tel_Prywatny }}</p>{{for xyz in wrt:}}{{if new.user_id==xyz.user_id:}}<p><h4>Posiadany Sprzet:</h4></p><p>Model: {{=xyz.Model}}{{pass}}{{pass}} </p></div><br/> {{pass}}{{pass}}

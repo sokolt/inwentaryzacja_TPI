@@ -1,0 +1,29 @@
+{{extend 'layout.html'}}
+<div class="well">
+
+    <h2>
+        {{=A('Dodaj Sprzet',_class="btn btn-large btn-primary",_style="width:30%",
+        _href=URL('EdycjaSprzet'))}}
+    </h2>
+
+    <h4>
+        {{=A('Aktualny Sprzet',_class="btn btn-large btn-primary",_style="width:30%",
+        _href=URL('Sprzet'))}}
+    </h4>
+    <h5>
+        {{=A('Zapotrzebowanie na sprzet',_class="btn btn-large btn-primary",_style="width:30%",
+        _href=URL('Zamowienie'))}}
+    </h5>
+    <h5>
+        {{=A('Twoje zamowienia',_class="btn btn-large btn-primary",_style="width:30%",
+        _href=URL('TwojeZamowienia'))}}
+    </h5>
+    <h5>
+        {{=A('Licencje',_class="btn btn-large btn-primary",_style="width:30%",
+        _href=URL('Licencje'))}}
+    </h5>
+    <h5>
+        {{=A('Dodawanie licencji',_class="btn btn-large btn-primary",_style="width:30%",
+        _href=URL('DodawanieLicencji'))}}
+    </h5>
+</div>

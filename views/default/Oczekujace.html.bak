@@ -1,0 +1,8 @@
+{{extend 'layout.html'}}
+
+
+<h1>Oczekujące</h1> <br/>{{ for new in sprzet: }}{{if new.Status==AKCEPTACJA[0]:}}<div>{{=(A(new.Rodzaj_Sprzetu,_href=URL('EdycjaSprzetx',args=new.id))) }} <p>Ilosc: {{= new.Ilosc}}</p><p>{{= new.Dodatkowy_opis }}</p><p>{{=new.Status}}</p><p>{{=new.Wlasciciel }}</p></div> <br/>
+{{for abc in xyz:}}{{if abc.id==new.Wlasciciel:}}{{=db.executesql('SELECT auth_user.first_name FROM auth_user WHERE ? = ?;',(abc.id, new.Wlasciciel))}}
+
+{{pass}}{{pass}}
+{{pass}}{{pass}}

@@ -1,0 +1,4 @@
+{{extend 'layout.html'}}
+
+
+<h1>Sprzet</h1> <br/> {{ for new in sprzet: }}<div><h2>{{=(A(new.Model,_href=URL('EdycjaSprzetx',args=new.id))) }} <small>Rodzaj sprzetu:({{=new.Rodzaj_Sprzetu }})</small></h2>{{for abc in wrt:}}{{if new.user_id==abc.user_id:}}<p><b>Wlasciciel: &nbsp</b>{{= abc.Imie }} {{=abc.Nazwisko}}</p>{{pass}}{{pass}}<p><b>Status:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b> {{=new.Status}}</p></div> <br/> {{pass}}

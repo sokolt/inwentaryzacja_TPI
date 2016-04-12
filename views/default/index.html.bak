@@ -1,0 +1,16 @@
+{{extend 'layout.html'}}
+
+<div class="well">
+
+    <h2>
+        {{=A('Pracownicy',_class="btn btn-large btn-primary",_style="width:30%",
+        _href=URL('indexx'))}}
+    </h2>
+
+    <h4>
+        {{=A('Sprzęt',_class="btn btn-large btn-primary",_style="width:30%",
+        _href=URL('indexxx'))}}
+    </h4>
+</div>
+{{=wrt}}
+{{pass}}
